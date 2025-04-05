@@ -1,10 +1,10 @@
 public class ReflectingActivity : Activity
 {
 
-    List<string> prompts = new List<string>(["Think of a time when you did something really difficult",
-    "Think of a time when you impressed yourself", 
-    "Think of a time when you were really proud of yourself"]);
-    List<string> questions = new List<string>(["How did you feel when it was complete?", "When did you felt you were at your strongest?", "What did you learn from this experience?"]);
+    List<string> prompts = new List<string>(["Recall a moment when you overcame a major obstacle",
+    "Reflect on a moment when you exceeded your own expectations", 
+    "Recall a moment when you felt a deep sense of accomplishment"]);
+    List<string> questions = new List<string>(["How did you feel when it was complete?", "When did you feel you were at your strongest?", "What did you learn from this experience?"]);
     public ReflectingActivity() : base("Reflecting Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it on other aspects of your life.")
     {
         SetStartMessage("Welcome to the Reflecting Activity!");
