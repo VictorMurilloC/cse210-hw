@@ -1,18 +1,23 @@
-public abstract class Goal 
+public abstract class Goal
 {
-    protected string _shortName;
-    protected string _description;
-    protected int _points;
+    private string _name;
+    private string _description;
+    private int _points;
 
-    public Goal(string name, string description,  int points)
+    public Goal(string name, string description, int points)
     {
-        _shortName = name;
+        _name = name;
         _description = description;
         _points = points;
     }
 
+    public string Name => _name;
+    public string Description => _description;
+    public int Points => _points;
+
     public abstract void RecordEvent();
-    public abstract string GetDetailsString();
-    public abstract bool isComplete();
-    public abstract string GetDetailString();
+    public abstract bool IsComplete();
+    public abstract string GetStatus();
+    public abstract string SaveToFile();
+    public abstract void LoadFromFile(string line);
 }
